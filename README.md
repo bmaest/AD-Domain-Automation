@@ -63,7 +63,7 @@ Password follows the convention: FIRSTLASTMMDDYYYY and is configured to be chang
 - Department
 - AccountPassword
 - Enabled
-- ChangedPasswordAtLogon
+- ChangePasswordAtLogon
 - Path
 
 **Usage:**
