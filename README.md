@@ -45,4 +45,28 @@ Collects system inventory data from domain-joined machines and exports it as str
 **Usage:**
 ```powershell
 .\computerAudit.ps1
+```
 
+### `newOrgUser.ps1`
+**Description:**  
+Automates the process of user creation in Active Directory. The script prompts for first name, last name, and role, then generates standardized user attributes including email, display name, username, password, and group assignment.
+
+Password follows the convention: FIRSTLASTMMDDYYYY and is configured to be changed at first logon.
+
+**Writes to the following fields:**
+- Name
+- DisplayName
+- SamAccountName
+- UserPrincipalName
+- EmailAddress
+- Title
+- Department
+- AccountPassword
+- Enabled
+- ChangedPasswordAtLogon
+- Path
+
+**Usage:**
+```powershell
+.\newOrgUser.ps1
+```
